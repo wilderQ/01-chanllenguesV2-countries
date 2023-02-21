@@ -1,0 +1,43 @@
+.galleryCountry{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    padding-bottom: 3em;
+}
+.card{
+    height: 350px;
+    width: 300px;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--Theme-box-shadow);
+    background-color: var(--Theme-background-elements);
+    cursor: pointer;
+}
+.card-img{
+    height: 60%;
+    width: inherit;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+    background-color:black;
+}
+.card-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position : center;
+}
+.card-text{   
+    padding:15px;
+}
+.card-text > h4{
+    color: var(--Theme-color-text-primary);
+    margin-bottom: 10px;
+}
+.card-text > p {
+    color: var(--Theme-color-text-secondary);
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: var( --Theme-fontWeight-600);
+}
+.card-text > p > span{
+    color: var(--Theme-color-text-tercer);
+}

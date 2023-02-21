@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+:root {
+  --Theme-background-elements: '';
+  --Theme-background:'',
+  --Theme-color-text-primary:'',
+  --Theme-color-text-secondary:''
+  --Theme-color-text-tercer: ''
+  
+  --Theme-fontWeight-300: 300;
+  --Theme-fontWeight-600: 600;
+  --Theme-fontWeight-800: 800;
+
+  --Theme-color-icon: '';
+  --Theme-box-shadow: '';
+  
+  --borderRadius: 5px;
+}
+.dark-mode{
+  --Theme-background-elements: hsl(209, 23%, 22%);
+  --Theme-background: hsl(207, 26%, 17%);
+  --Theme-color-text-primary:hsl(0, 0%, 100%);
+  --Theme-color-text-secondary:hsl(0, 0%, 98%);
+  --Theme-color-text-tercer: hsl(0, 0%, 52%);
+  --Theme-color-icon: hsl(0, 0%, 100%);
+  --Theme-box-shadow: 0px 0px 5px hsla(210, 8%, 15%, 0.719);
+  
+  background-color: var(--Theme-background) ;
+
+}
+.ligth-mode{
+  --Theme-background-elements: hsl(0, 0%, 100%);
+  --Theme-background: hsl(0, 0%, 98%);
+  --Theme-color-text-primary: hsl(200, 15%, 8%);
+  --Theme-color-text-secondary:hsl(209, 23%, 22%);
+  --Theme-color-text-tercer:  hsla(209, 26%, 17%, 0.815);
+  --Theme-color-icon: hsl(0, 7%, 17%);
+  --Theme-box-shadow: 0px 0px 3px hsla(209, 26%, 17%, 0.274);
+
+  background-color: var(--Theme-background) ;
+
+}
+.icon-color{
+  color: var(--Theme-color-icon);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+input{
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--Theme-color-text-tercer);
+  font-weight: var(--Theme-fontWeight-600);
+}
+.App{
+  min-height: 100vh;
+}

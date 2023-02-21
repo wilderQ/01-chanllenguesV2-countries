@@ -1,0 +1,104 @@
+
+.button{
+    background-color:var(--Theme-background-elements);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--Theme-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px 0;
+    gap: 0.5em;
+    margin: 3em 0;
+    cursor: pointer;
+}
+.btn-text{
+    color: var(--Theme-color-text-secondary);
+    font-size: 16px
+}
+.contenido{
+    display: flex;
+}
+.contenido-img{
+    width: 50%;
+    height: 450px;
+    object-fit: cover;
+}
+.contenido-img img{
+    width: 100%;
+    height: 100%;
+}
+.contenido-text{
+    width: 50%;
+    padding: 4em;
+}
+
+.contenido-text h2{
+    color: var(--Theme-color-text-primary);
+    margin-bottom: 20px;
+}
+.contenido-text__column{
+    display: flex;
+    gap: 4em;
+}
+.column-parrafo >p {
+    color: var(--Theme-color-text-secondary);
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: var( --Theme-fontWeight-600);
+    margin-bottom: 10px;
+}
+.column-parrafo > p > span{
+    color: var(--Theme-color-text-tercer);
+    margin-left: 5px;
+}
+
+.items-borders{
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.span-border{
+    color: var(--Theme-color-text-secondary);
+    font-weight: var( --Theme-fontWeight-600);
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.border-item{
+    padding: 10px 20px;
+    background-color:var(--Theme-background-elements);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--Theme-box-shadow);
+    color: var(--Theme-color-text-secondary);
+    cursor: pointer;
+}
+@media (max-width: 830px) {
+    .contenido{
+        flex-direction: column;
+    }
+    .contenido-img{
+        width: 100%;
+        height: 350px;
+    }
+    .contenido-text{
+        width: 100%;
+        padding: 4em 0;
+    }
+}
+@media (max-width: 430px) {
+    .contenido-img{
+        height: 250px;
+    }
+    .contenido-text__column{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .items-borders{
+        flex-direction: column;
+        align-items: start;
+    }
+}
